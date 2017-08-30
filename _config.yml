@@ -2,13 +2,13 @@
 title:            "BestYuer|最好的于儿"
 description:      "最好的于儿|欢迎来到于儿的网络「角落」"
 url:              "https://jarodyv.github.io/" # 域名
-signoff:          "Yu•Er" # Your name
+signoff:          "YuEr" # Your name
 facebook_appid:   #facebook_id
 google_analytics: #UA-101222464-1
 share:            true 
 # 分页
 paginate: 15
-paginate_path: "liberxuepage:num"
+paginate_path: "yuerpage:num"
 gems: [jekyll-paginate]
 links:
   - name:         首页
