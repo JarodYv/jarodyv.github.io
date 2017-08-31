@@ -26,12 +26,12 @@ links:
   - name:         我玩
     url:          /play
     external:     false
-  - name:         归档
-    url:          /archives
-    external:     false
-  - name:         标签
-    url:          /tags
-    external:     false
+  # - name:         归档
+  #   url:          /archives
+  #   external:     false
+  # - name:         标签
+  #   url:          /tags
+  #   external:     false
   - name:         关于
     url:          /about
     external:     false
