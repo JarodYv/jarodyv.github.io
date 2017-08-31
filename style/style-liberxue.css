@@ -359,7 +359,7 @@ pre code::after {font-size: 1rem;color: #BFBFBF;position: absolute;top: 5px;righ
 .footer-meta{padding:50px 0 0;list-style:none;}
 .footer-meta .footer-container{width:100%;max-width:960px;height:250px;margin:0 auto;padding:0 80px;}
 .footer-meta .meta-item{position:relative;float:left;width:33.3333333%;min-height:1px;padding:0 30px;}
-.footer-meta .meta-copyright .info-logo img{height:32px;margin-bottom:12px;}
+.footer-meta .meta-copyright .info-logo img{height:32px;margin-bottom:12px;opacity: 0.7;}
 .footer-meta .meta-copyright .info-text p{font-size:13px;line-height:20px;margin:0;color:#767676;}
 .footer-meta .meta-copyright .info-text a{color:#767676;}
 .footer-meta .meta-title{font-size:14px;padding:0 0 10px 0;text-decoration:none;color:#5f5f5f;}
