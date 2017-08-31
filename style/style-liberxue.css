@@ -429,7 +429,7 @@ pre code::after {font-size: 1rem;color: #BFBFBF;position: absolute;top: 5px;righ
 }
 @media(max-width:580px){
    .navbar-search form{width:150px;}
-   .navbar-search form .search-box {width:400px;}
+   .navbar-search form .search-box {width:150px;}
    .index-page{padding:80px 0 0;}
    .archive-page{padding:80px 0 20px;}
    .common-page{padding:80px 0 0;}
