@@ -17,11 +17,11 @@ links:
   - name:         我读
     url:          /book
     external:     false
-  - name:         我游
-    url:          /trip
-    external:     false
   - name:         我学
     url:          /learn
+    external:     false
+  - name:         我游
+    url:          /trip
     external:     false
   - name:         我玩
     url:          /play
