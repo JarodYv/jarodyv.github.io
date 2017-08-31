@@ -20,6 +20,9 @@ links:
   - name:         旅游
     url:          /road
     external:     false
+  - name:         Scratch
+    url:          /scratch
+    external:     false
   - name:         归档
     url:          /archives
     external:     false
