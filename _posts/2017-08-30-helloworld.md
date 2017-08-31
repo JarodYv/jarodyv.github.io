@@ -1,6 +1,6 @@
 ---
 layout: blog
-scratch: true
+learn: true
 istop: false
 title: "Hello World"
 background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-16/38390376.jpg

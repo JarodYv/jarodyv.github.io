@@ -1,28 +1,17 @@
 ---
 layout: blog
-title: 关于LiberXue
-description: "关于LiberXue博客角落自述"
+title: 关于我
+description: "关于YuEr博客角落自述"
 tags: 
-- LiberXue
+- YuEr
 - 简述
 - 关于
-- Liber
-- Xue
-- 坐井观天阔
 redirect_from:
   - /about/
 ---
 
-# Hello World
- 
-又换了个博客主题 这次终于看见不那么难受了
- 
-博客使用Jekyll搭建托管在GitHub目前使用主题后期我修改完善会开源
- 
 
-博客图片使用七牛云加速
-
-##  LiberXue  曾用名013
+##  YuEr
  
 ### 曾用名013简述
  
