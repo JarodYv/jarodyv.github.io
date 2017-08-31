@@ -18,7 +18,15 @@
 					<div class="item-label">
 						<div class="item-title"><a href="{{ posts.url }}" title="访问 {{ posts.title }}"  data-hover="{{ posts.title }}">{{ posts.title }}</a></div>
 						<div class="item-meta clearfix">
+						{% if site.category=='scratch' %}
+						<div class="item-meta-ico bg-ico-code" style="background: url('style/images/bg-ico.png') no-repeat;background-size: 40px auto;"></div>
+						<% elsif site.category=='书籍' %}
 						<div class="item-meta-ico bg-ico-book" style="background: url('style/images/bg-ico.png') no-repeat;background-size: 40px auto;"></div>
+						<% elsif site.category=='旅游' %}
+						<div class="item-meta-ico bg-ico-image" style="background: url('style/images/bg-ico.png') no-repeat;background-size: 40px auto;"></div>
+						<% else %}
+						<div class="item-meta-ico bg-ico-note" style="background: url('style/images/bg-ico.png') no-repeat;background-size: 40px auto;"></div>
+						{% endif %}
              <div class="item-meta-cat">
 				 <a href="/tags#{{ posts.category }}" title="访问 {{ posts.category }}" data-hover="{{ posts.category }}">{{ posts.category }}</a>
 				 <a href="/archives#{{ posts.date | date: "%Y"}}" title="访问 {{ posts.date | date: "%Y"}}" data-hover="{{ posts.date | date: "%F %H:%M"}}">{{ posts.date | date: "%F %H:%M"}}</a></div>
