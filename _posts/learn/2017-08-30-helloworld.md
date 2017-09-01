@@ -2,17 +2,32 @@
 layout: blog
 learn: true
 istop: false
-title: "Hello World"
-background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-16/38390376.jpg
-date:  2017-08-30 23:45:56
+title: "开学啦！我是小学生了～"
+background-image: http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/learn_20170901_pic2.jpg
+date:  2017-09-01 10:45:56
 category: 我学
 tags:
-- test
+- 开学
 ---
 
-# Hello World
-尝试任何系统的第一篇代码肯定是
+## 开学啦
 
+今天9月1号，开学啦！
+
+我正式成为一名小学生啦！
+
+小学肯定有很多很多好玩的东西等着我去学习、探索 -- 好期待呀。
+
+![](http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/learn_20170901_pic1.jpg)
+
+
+## 爸爸妈妈的祝福
+
+>
 ```
-Hello World
+祝于儿成为一名快乐的小学生，交到很多新朋友，健康快乐的成长。
+ 										   -- 爸爸 & 妈妈
 ```
+
+![](http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/learn_20170901_pic2.jpg)
+
