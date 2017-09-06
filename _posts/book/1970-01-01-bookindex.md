@@ -8,18 +8,31 @@ title: 读过的书|在读的书
 tags:
 - 书籍
 - book
-- 于儿读过书
+- 于儿的书架
 redirect_from:
   - /1970/01/bookindex/
 ---
 
-何其有幸。仅需短短几小时，至多几十个小时就能读完一本作家的心血结晶。感受他们的或磅礴思想、或悲欢离合，从文字中汲取养分与力量,感受他们的或磅礴思想、或悲欢离合，从文字中汲取养分与力量
+```
+书是人类进步的阶梯
+		-- 高尔基
+```
 
-科普是现实和功利主义的，科幻是感性和理想主义的，科普是知识的灌输，而科幻则是心灵的启迪。
+我是个爱读书的小孩儿，我已经拥有 **154** 本图书。他们在我家的书房，看上去像这个样子：
+
+![]()
+
+这些书有差不多一半是世界优秀的绘本，剩下的是关于恐龙、星座、数学等自然科学类的书。我的书里纯文字的文学类书籍不多。现在我上小学了，我要多看些文字多的书，其实我识字还是蛮多的。
+
+我刚看完了[**《纳尼亚传奇》**](https://www.amazon.cn/%E5%9B%BE%E4%B9%A6/dp/B00KGNPKHY/ref=sr_1_7?s=books&ie=UTF8&qid=1504690366&sr=1-7) 
+
+<img src='http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/81T6QuY25BL.jpg' width='200px' align='center'/> 
+
+接下来要看 [**《夏洛的网》**](https://www.amazon.cn/图书/dp/B01BS7B43K/ref=sr_1_4?s=books&ie=UTF8&qid=1504690860&sr=1-4) 、 [**《造梦的雨果》**](http://product.dangdang.com/22741905.html) 、 [**《爱德华的奇妙之旅》**](https://www.amazon.cn/国际大奖小说-爱德华的奇妙之旅-迪卡米洛/dp/B0035J4IPQ/ref=sr_1_2_twi_har_2?s=books&ie=UTF8&qid=1504691047&sr=1-2)
+
+<img src='https://images-cn.ssl-images-amazon.com/images/I/91de3O8HsOL.jpg' height='260px'/>
+<img src='https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=6904614d70f082022d92963973c09cd0/77094b36acaf2edd6783cc878e1001e93901936a.jpg' height='260px'/> 
+<img src='https://images-cn.ssl-images-amazon.com/images/I/51I28umcF-L._SX360_BO1,204,203,200_.jpg' height='260px'/>  
  
- 
-从本质上说，金戒指和钻石戒指没有什么不同，都是出于炫耀意义的产物，所以他们怎么能衬托出谁比谁更高贵呢？真正的高贵可能是什么也不戴，却比那些戴满饰品的人更光彩夺目。
- 
- 
-人间的贵有三种，一种是一眼就能看出的贵，这通常是因为其吃穿用度写满了昂贵的标签，这是富贵；一种是第一眼看不出贵，但过后就能感受出来的身份地位、教养学识，这是权贵；还有一种是看多少眼都还是那样耀眼，只因为其迷人的气质和思想，这是高贵.
+我把我的所有图书都整理放到了 [**我的书架**](http://www.bestyuer.com/deliciouslibrary/index.html) ，欢迎大家浏览 [**我的书架**](http://www.bestyuer.com/deliciouslibrary/index.html) ，我非常愿意跟大家分享我的书。
 
