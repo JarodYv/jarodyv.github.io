@@ -16,6 +16,13 @@ tags:
 
 我想送花给老师，于是妈妈教我做手工花。
 
-我还想送贺卡给考试，于是我让爸爸教我用scratch做会动的贺卡。
+![](http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/learn_20170910_pic1.jpg)
+
+我还想送贺卡给老师，于是我让爸爸教我用scratch做会动的贺卡。
+
+贺卡最终是这样子的
 
 <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/173550969/?autostart=false" frameborder="0" allowfullscreen></iframe>
+
+你可以点击[这里](https://scratch.mit.edu/projects/173550969/)查看整个工程的源代码。
+
