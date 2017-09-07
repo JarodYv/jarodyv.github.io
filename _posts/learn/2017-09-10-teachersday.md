@@ -26,3 +26,15 @@ tags:
 
 你可以点击[这里](https://scratch.mit.edu/projects/173550969/)查看整个工程的源代码。
 
+```
+<scratchblocks>
+when green flag clicked
+forever
+   turn cw (15) degrees
+   say [Hello!] for (2) secs
+   if <mouse down?> then
+      change [mouse clicks v] by (1)
+   end
+</scratchblocks>
+```
+
