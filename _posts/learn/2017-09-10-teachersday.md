@@ -78,9 +78,9 @@ Scratch里自带了好多素材，先从Scratch自带的素材库中找找看。
 
 <pre class='blocks'>
 重复执行直到 <(running) = [0]> // 用变量running控制是否还播放动画
-  将 [鱼眼 v] 效果设定为 [50]
+  将 [鱼眼 v] 特效设定为 [50]
   等待 [1] 秒
-  将 [鱼眼 v] 效果设定为 [0]
+  将 [鱼眼 v] 特效设定为 [0]
   等待 [1] 秒
 结束 
 </pre>
@@ -101,10 +101,10 @@ http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/teachersday_pic3.jpg)
 然后利用循环每次切换一个造型，形成一帧一帧的帧动画。
 
 <pre class='blocks'>
-repeat [4] // 重复执行4次，因为礼盒有4个动画帧
-	next costume
-	wait [0.1] secs //  每帧之间等待0.1s；根据视觉暂留现象，等待0.04s效果更佳
-end
+重复执行 [4] 次 // 重复执行4次，因为礼盒有4个动画帧
+	下一个造型
+	等待 [0.1] 秒 //  每帧之间等待0.1s；根据视觉暂留现象，等待0.04s效果更佳
+结束
 </pre>
 
 > 帧动一般用于实现复杂的动画效果，比如人物行走、炸弹爆炸等，有UI奖每一帧画出来，然后像放电影一样逐帧播放出来。
@@ -114,10 +114,10 @@ end
 对于一些简单的**位移动画**， Scratch提供了模块可以简单很简单地实现。
 
 <pre class='blocks'>
-glide [?] secs to x:[?] y:[?]
+在 [?] 秒内滑行到 x:[?] y:[?]
 </pre>
 
-贺卡中文字的飞入就可以用 <code class='b'>glide [?] secs to x:[?] y:[?]</code> 来实现。先让文字的位置设在屏幕外，然后在1秒钟的时间内飞到屏幕指定位置。
+贺卡中文字的飞入就可以用 <code class='b'>在 [?] 秒内滑行到 x:[?] y:[?]</code> 来实现。先让文字的位置设在屏幕外，然后在1秒钟的时间内飞到屏幕指定位置。
 
 #### 粒子效果
 
@@ -155,9 +155,9 @@ delete this clone
 首先要加入背景音乐。我几乎把Scratch音频库中的音乐都听了一遍，最终选出 **odesong-b**作为背景音乐，因为这个音乐不但好听，更重要的是循环播放可以衔接上。
 
 <pre class='blocks'>
-forever
-	play sound [odesong-b v] until done // 注意一定要加until done，否则播不出来。为什么？自己去想。
-end
+重复执行
+	播放声音 [odesong-b v] 直到播放完毕 // 注意一定要加until done，否则播不出来。为什么？自己去想。
+结束
 </pre>
 
 我的祝福语要我亲自录，Scratch自带录音功能。
@@ -168,8 +168,8 @@ http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/teachersday_pic4.jpg)
 点击我的头像就播我的祝福语
 
 <pre class='blocks'>
-when this sprite clicked
-play sound [wish v]
+当角色被点击时
+播放声音 [wish v]
 </pre>
 
 ### 总结
