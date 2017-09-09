@@ -70,14 +70,14 @@ Scratch里自带了好多素材，先从Scratch自带的素材库中找找看。
 
 这些动画实现的方式和思路都不同，下面逐个说一下。
 
-##### 礼盒膨胀动画
+#### 礼盒膨胀动画
 
 礼盒打开前，我希望做一个动画吸引人点击。因为只有点击礼盒，后面的动画才会触发。
 
 礼盒动画我希望做出一种礼盒中有很多的东西准备爆出来的感觉。Scratch中的**鱼眼**特效可以给图片加上一种放大镜放大的效果，基本可以实现我想要的爆出来的感觉。只要循环不断膨胀--还原--膨胀--还原 ………… 直到礼盒被点击。
 
 <pre class='blocks'>
-repeat until < (running)=[0]> // 用变量running控制是否还播放动画
+repeat until <(running)=[0]> // 用变量running控制是否还播放动画
 	set [fisheye v] effect to [50]
 	wait [1] secs
 	set [fisheye v] effect to [0]
@@ -85,24 +85,99 @@ repeat until < (running)=[0]> // 用变量running控制是否还播放动画
 end
 </pre>
 
-##### 礼盒打开动画
+> 所谓动画，是利用视觉暂留现象，在一定时间内不断变化对象的状态而产生的视觉效果。上面的动画利用循环不断改变角色图片的状态，从而实现动画效果。这种动画实现方式一般比较适合以一定规律循环重复的动画。
 
-##### 文字飞入
+#### 礼盒打开动画
 
-##### 粒子效果
+点击礼盒后，礼盒会打开。礼盒打开过程需要以动画形式来呈现。
 
-#### 加入声音
+> 礼盒的打开动画比较复杂，不像礼盒膨胀动画一样有规律可循。这个时候就需要使用**帧动画**来实现。
 
-你可以点击[这里](https://scratch.mit.edu/projects/173550969/)查看整个工程的源代码。
+由于我们找到的礼盒素材是gif图，gif图本身就是一种帧动画。爸爸很容易得就将里面一帧一帧的图片抽取出来，然后导入到礼盒的造型中。
+
+![](
+http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/teachersday_pic3.jpg)
+
+然后利用循环每次切换一个造型，形成一帧一帧的帧动画。
 
 <pre class='blocks'>
-when green flag clicked
-forever
-   turn cw (15) degrees
-   say [Hello!] for (2) secs
-   if <mouse down?> then
-      change [mouse clicks v] by (1)
-   end
+repeat [4] // 重复执行4次，因为礼盒有4个动画帧
+	next costume
+	wait [0.1] secs //  每帧之间等待0.1s；根据视觉暂留现象，等待0.04s效果更佳
 end
 </pre>
+
+> 帧动一般用于实现复杂的动画效果，比如人物行走、炸弹爆炸等，有UI奖每一帧画出来，然后像放电影一样逐帧播放出来。
+
+#### 文字飞入
+
+对于一些简单的**位移动画**， Scratch提供了模块可以简单很简单地实现。
+
+<pre class='blocks'>
+glide [?] secs to x:[?] y:[?]
+</pre>
+
+贺卡中文字的飞入就可以用 `glide [?] secs to x:[?] y:[?]` 来实现。先让文字的位置设在屏幕外，然后在1秒钟的时间内飞到屏幕指定位置。
+
+#### 粒子效果
+
+上面的动画实现方式是Scratch中最常用的3种动画实现方式：`循环特效`、`帧动画`、`位移动画`。这些动画方式在实现单个角色动画时很有效，但是对于实现心心飞出这种大量角色动画时，就会有点小问题--每个心的动画都是一样的，整体效果非常生硬。爸爸说：要想让心心飞的自然，需要使用**粒子系统**
+
+> 粒子系统是计算机图形学中模拟一些特定的模糊现象的技术，比如火、雪、爆炸、烟花等由大量随机粒子构成的自然现象。
+
+粒子系统太高深，我听不懂，所以心心飞出的效果是爸爸实现的。直接贴代码出来，大家自己去研究。总之，我的理解是**加入大量随机变量**。
+
+<pre class='blocks'>
+when I start as a clone
+set [count v] to [0]
+switch costume to (join [heart] (pick random [1] to [5]))
+set [ghost v] effect to [0]
+change size by [-20]
+go to x:[0] y[-150]
+wait (pick random [0] to [10]) secs
+repeat until< (y position)>[180]>
+	change [count v] by [1]
+	change size by [2]
+	change [ghost v] effect by [2]
+	if <(count)>[50]> then
+		set [count v] to [50]
+	end
+	glide [1] secs to x:((x position)+(pick random ([-30]+((count)*[-1])) to ([30]+((count)*[1])))) y:(((y position)+[20])+(pick random [5] to [15]))
+end
+broadcast [onemore v]
+delete this clone
+</pre>
+
+### 加入声音
+
+贺卡怎么能没有声音呢？
+
+首先要加入背景音乐。我几乎把Scratch音频库中的音乐都听了一遍，最终选出 **odesong-b**作为背景音乐，因为这个音乐不但好听，更重要的是循环播放可以衔接上。
+
+<pre class='blocks'>
+forever
+	play sound [odesong-b v] until done // 注意一定要加until done，否则播不出来。为什么？自己去想。
+end
+</pre>
+
+我的祝福语要我亲自录，Scratch自带录音功能。
+
+![](
+http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/teachersday_pic4.jpg)
+
+点击我的头像就播我的祝福语
+
+<pre class='blocks'>
+when this sprite clicked
+play sound [wish v]
+</pre>
+
+### 总结
+
+贺卡终于做完了，希望老师们都能喜欢。
+
+这个项目主要用到了很多动画实现方法，让我很好地学习了用Scratch如何做动画。
+
+完整的项目代码在[这里](https://scratch.mit.edu/projects/173550969/)，欢迎remix。
+
 
