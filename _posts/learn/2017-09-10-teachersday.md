@@ -77,12 +77,12 @@ Scratch里自带了好多素材，先从Scratch自带的素材库中找找看。
 礼盒动画我希望做出一种礼盒中有很多的东西准备爆出来的感觉。Scratch中的**鱼眼**特效可以给图片加上一种放大镜放大的效果，基本可以实现我想要的爆出来的感觉。只要循环不断膨胀--还原--膨胀--还原 ………… 直到礼盒被点击。
 
 <pre class='blocks'>
-重复执行直到 <(running) = [0]> // 用变量running控制是否还播放动画
-   将 [超广角镜头 v] 特效设定为 [50]
-   等待 [1] 秒
-   将 [超广角镜头 v] 特效设定为 [0]
-   等待 [1] 秒
-结束
+repeat until < (running)=[0]> // 用变量running控制是否还播放动画
+	set [fisheye v] effect to [50]
+	wait [1] secs
+	set [fisheye v] effect to [0]
+	wait [1] secs
+end
 </pre>
 
 ##### 礼盒打开动画
@@ -103,5 +103,6 @@ forever
    if <mouse down?> then
       change [mouse clicks v] by (1)
    end
+end
 </pre>
 
