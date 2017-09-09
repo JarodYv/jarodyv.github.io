@@ -2,7 +2,7 @@
 layout: blog
 book: true
 istop: true
-background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-16/91630214.jpg
+background-image: http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/bookshelf.jpg
 category: 我读
 title: 读过的书|在读的书
 tags:
@@ -10,7 +10,7 @@ tags:
 - book
 - 于儿的书架
 redirect_from:
-  - /1970/01/bookindex/
+  - /2010/01/bookindex/
 ---
 
 ```
@@ -20,7 +20,7 @@ redirect_from:
 
 我是个爱读书的小孩儿，我已经拥有 **154** 本图书。他们在我家的书房，看上去像这个样子：
 
-![]()
+![](http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/bookshelf.jpg)
 
 这些书有差不多一半是世界优秀的绘本，剩下的是关于恐龙、星座、数学等自然科学类的书。我的书里纯文字的文学类书籍不多。现在我上小学了，我要多看些文字多的书，其实我识字还是蛮多的。
 
