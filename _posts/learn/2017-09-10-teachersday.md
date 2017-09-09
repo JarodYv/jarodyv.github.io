@@ -128,24 +128,24 @@ http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/teachersday_pic3.jpg)
 粒子系统太高深，我听不懂，所以心心飞出的效果是爸爸实现的。直接贴代码出来，大家自己去研究。总之，我的理解是**加入大量随机变量**。
 
 <pre class='blocks'>
-when I start as a clone
-set [count v] to [0]
-switch costume to (join [heart] (pick random [1] to [5]))
-set [ghost v] effect to [0]
-change size by [-20]
-go to x:[0] y[-150]
-wait (pick random [0] to [10]) secs
-repeat until< (y position)>[180]>
-	change [count v] by [1]
-	change size by [2]
-	change [ghost v] effect by [2]
-	if <(count)>[50]> then
-		set [count v] to [50]
-	end
-	glide [1] secs to x:((x position)+(pick random ([-30]+((count)*[-1])) to ([30]+((count)*[1])))) y:(((y position)+[20])+(pick random [5] to [15]))
-end
-broadcast [onemore v]
-delete this clone
+当作为克隆体启动时
+将 [count v] 设定为 [0]
+将造型切换为 (连接 [heart] 和 (在 [1] 到 [5] 间随机选一个数))
+将 [虚像 v] 特效设定为 [0]
+将角色大小增加 [-20]
+移到 x:[0] y[-150]
+等待 (在 [0] 到 [10] 间随机选一个数) 秒
+重复执行直到< (y 坐标)>[180]>
+	将 [count v] 增加 [1]
+	将角色的大小增加 [2]
+	将 [虚像 v] 特效增加 [2]
+	如果 <(count)>[50]> 那么
+		将 [count v] 设定为 [50]
+	结束
+	在 [1] 秒内滑行到 x:((x 坐标)+(在 ([-30]+((count)*[-1])) 到 ([30]+((count)*[1])) 间随机选一个数)) y:(((y 坐标)+[20])+(在 [5] 到 [15] 间随机选一个数))
+结束
+广播 [onemore v]
+删除本克隆体
 </pre>
 
 ### 加入声音
