@@ -6,8 +6,10 @@
     <meta content='{{ page.title }} - {{ site.title }}' name='og:title' />
     <title>{{ page.title }} - {{ site.title }}</title>
     {% include head.html %}
-    <script src="//scratchblocks.github.io/js/scratchblocks-v3-min.js"></script>
-    <script src="//scratchblocks.github.io/js/translations-v3-min.js"></script>
+    <script src="
+http://xiooix.oss-cn-hangzhou.aliyuncs.com/scratchblocks/scratchblocks-v3.1-min.js"></script>
+    <script src="
+http://xiooix.oss-cn-hangzhou.aliyuncs.com/scratchblocks/translations-v3.1-min.js"></script>
   </head>
 <body class="" gtools_scp_screen_capture_injected="true">
 <header id="header" class="header bg-white">
@@ -220,7 +222,10 @@ var postDirectoryBuild = function() {
 };
 postDirectoryBuild();
 </script>
-<script type="text/javascript">scratchblocks.renderMatching('pre.blocks');</script>
+<script type="text/javascript">
+scratchblocks.renderMatching('pre.blocks');
+scratchblocks.renderMatching("code.b", {inline: true});
+</script>
 <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script>lang=hljs.initHighlightingOnLoad();</script>   
 </body>
