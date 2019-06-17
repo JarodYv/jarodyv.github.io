@@ -1,1 +1,3 @@
-# Welcome to BestYuer http://www.bestyuer.com/
+# Welcome to CodeClub 
+
+(http://www.codeclub.cn/)[http://www.codeclub.cn/]
