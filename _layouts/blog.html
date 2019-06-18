@@ -14,8 +14,9 @@ http://xiooix.oss-cn-hangzhou.aliyuncs.com/scratchblocks/translations-v3.1-min.j
 <body class="" gtools_scp_screen_capture_injected="true">
 <header id="header" class="header bg-white">
     <div class="navbar-container">
-      <a href="/?yuer" title="访问 {{site.title }}" class="navbar-logo"> <img src="//codeclub.oss-cn-hangzhou.aliyuncs.com/style/images/codeclub.png" alt="{{ site.title }}"> </a>
-        <div class="navbar-menu">
+      <a href="/" title="访问 {{site.title }}" class="navbar-logo"> <img src="//codeclub.oss-cn-hangzhou.aliyuncs.com/style/images/codeclub.png" alt="{{ site.title }}"> </a>
+      <p class="navbar-logo" style="margin-left: 100px;">CodeClub</p>   
+      <div class="navbar-menu">
             {% for link in site.links %}             
             <a href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">{{ link.name }}</a>
                 {% endfor %}
@@ -103,7 +104,7 @@ http://xiooix.oss-cn-hangzhou.aliyuncs.com/scratchblocks/translations-v3.1-min.j
 </p>
 {{ content }}
 		<p class="post-info">
-			本文由 <a href="/">Yu•Er</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external nofollow">知识共享署名4.0</a> 国际许可协议进行许可<br>本站文章除注明转载/出处外，均为本站原创或翻译，转载前请务必署名<br>最后编辑时间为:{{ page.date | date: "%F %H:%M:%S"}}</p>
+			本文由 <a href="/">CodeClub</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external nofollow">知识共享署名4.0</a> 国际许可协议进行许可<br>本站文章除注明转载/出处外，均为本站原创或翻译，转载前请务必署名<br>最后编辑时间为:{{ page.date | date: "%F %H:%M:%S"}}</p>
 	</div>
 </article>
 
