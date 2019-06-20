@@ -5,7 +5,7 @@ title:  "用Scratch制作教师节贺卡，祝老师教师节快乐！"
 background: #ffc0cb
 background-image: http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/teachersday.png
 date:   2017-09-10 23:13:54
-category: 我学
+category: python
 tags:
 - scratch
 - 编程

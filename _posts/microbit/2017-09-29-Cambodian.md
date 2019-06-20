@@ -6,7 +6,7 @@ title: "探访吴哥窟"
 background: green
 background-image: http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/learn_20170901_pic2.jpg
 date:  2017-09-29 08:30:00
-category: 我游
+category: micro:bit
 tags:
 - 开学
 ---

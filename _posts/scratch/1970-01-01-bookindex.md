@@ -3,7 +3,7 @@ layout: blog
 book: true
 istop: true
 background-image: http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/bookshelf.jpg
-category: 我读
+category: Scratch
 title: 读过的书|在读的书
 tags:
 - 书籍
