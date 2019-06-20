@@ -1,6 +1,6 @@
 ---
 layout: blog
-trip: true
+microbit: true
 istop: false
 title: "探访吴哥窟"
 background: green

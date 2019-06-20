@@ -1,6 +1,6 @@
 ---
 layout: blog
-play: true
+html: true
 istop: false
 title: "海珠湿地挖莲藕"
 background: green

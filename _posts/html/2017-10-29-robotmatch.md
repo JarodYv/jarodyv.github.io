@@ -1,6 +1,6 @@
 ---
 layout: blog
-play: true
+html: true
 istop: false
 title: "机器人拼装大赛——我的机器人跑得最快"
 background: green

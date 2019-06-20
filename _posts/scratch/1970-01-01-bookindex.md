@@ -1,6 +1,6 @@
 ---
 layout: blog
-book: true
+scratch: true
 istop: true
 background-image: http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/bookshelf.jpg
 category: Scratch
