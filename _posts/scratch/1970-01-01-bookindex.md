@@ -2,20 +2,17 @@
 layout: blog
 scratch: true
 istop: true
-background-image: http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/bookshelf.jpg
+background-image: https://projects-static.raspberrypi.org/projects/rock-band/424fcbee36055e389c905c9f978372ccfbf58e54/zh-CN/images/hero-rock-band-large.png
 category: Scratch
-title: 读过的书|在读的书
+title: 摇滚乐队
 tags:
-- 书籍
-- book
-- 于儿的书架
-redirect_from:
-  - /2010/01/bookindex/
+- Scratch
+- 1级
+- 入门课
 ---
 
 ```
-书是人类进步的阶梯
-		-- 高尔基
+温馨提示：本系列课程采用 **Scratch 3** 教学
 ```
 
 我是个爱读书的小孩儿，我已经拥有 **154** 本图书。他们在我家的书房，看上去像这个样子：
