@@ -14,17 +14,17 @@ links:
   - name:         首页
     url:          /
     external:     false
-  - name:         我读
-    url:          /book
+  - name:         Scratch
+    url:          /scratch
     external:     false
-  - name:         我学
-    url:          /learn
+  - name:         Python
+    url:          /python
     external:     false
-  - name:         我游
-    url:          /trip
+  - name:         HTML
+    url:          /html
     external:     false
-  - name:         我玩
-    url:          /play
+  - name:         micro:bit
+    url:          /microbit
     external:     false
   # - name:         归档
   #   url:          /archives
