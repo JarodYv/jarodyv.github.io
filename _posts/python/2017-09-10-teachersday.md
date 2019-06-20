@@ -2,7 +2,7 @@
 layout: blog
 python: true
 title:  "石头，剪刀，布"
-background: green
+background: #0075AA
 background-image: https://projects-static.raspberrypi.org/projects/rock-paper-scissors/69ca2f25e42aa9f46844931de5dd7ae0d16218db/en/images/rock-paper-scissors.png
 date:   2017-09-10 23:13:54
 category: Python

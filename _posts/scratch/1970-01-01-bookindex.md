@@ -2,12 +2,13 @@
 layout: blog
 scratch: true
 istop: true
+background: #FBA423
 background-image: https://projects-static.raspberrypi.org/projects/rock-band/424fcbee36055e389c905c9f978372ccfbf58e54/zh-CN/images/hero-rock-band-large.png
 category: Scratch
 title: 摇滚乐队
 tags:
 - Scratch
-- 1级
+- 容易
 - 入门课
 ---
 

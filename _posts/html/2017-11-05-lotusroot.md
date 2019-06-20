@@ -3,7 +3,7 @@ layout: blog
 html: true
 istop: false
 title: "讲故事"
-background: green
+background: #E44C27
 background-image: https://projects-static.raspberrypi.org/projects/tell-a-story/444b2ea2324a9abec84902189357beaa42b9be57/en/images/tell-a-story.png
 date:  2017-11-05 15:30:00
 category: HTML

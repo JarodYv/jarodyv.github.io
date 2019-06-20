@@ -3,7 +3,7 @@ layout: blog
 microbit: true
 istop: false
 title: "心情探测仪"
-background: purple
+background: green
 background-image: https://projects-static.raspberrypi.org/projects/interactive-badge/bd562f2e3fc14ac2e69899404445a637e1dbd767/en/images/interactive-badge.png
 date:  2017-09-29 08:30:00
 category: micro:bit

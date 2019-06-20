@@ -3,7 +3,7 @@ layout: blog
 html: true
 istop: false
 title: "生日快乐"
-background: blue
+background: #E44C27
 background-image: https://projects-static.raspberrypi.org/projects/happy-birthday/56fe464042e92183fecf5b0ee688509261f3d35c/en/images/happy-birthday.png
 date:  2017-10-29 10:45:56
 category: HTML
