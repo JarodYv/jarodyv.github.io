@@ -2,13 +2,15 @@
 layout: blog
 html: true
 istop: false
-title: "海珠湿地挖莲藕"
+title: "讲故事"
 background: green
-background-image: http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/learn_20170901_pic2.jpg
+background-image: https://projects-static.raspberrypi.org/projects/tell-a-story/444b2ea2324a9abec84902189357beaa42b9be57/en/images/tell-a-story.png
 date:  2017-11-05 15:30:00
 category: HTML
 tags:
-- 开学
+- HTML
+- 容易
+- HTML系列课程1
 ---
 
 ## 海珠湿地挖莲藕

@@ -1,15 +1,15 @@
 ---
 layout: blog
 python: true
-title:  "用Scratch制作教师节贺卡，祝老师教师节快乐！"
-background: #ffc0cb
-background-image: http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/teachersday.png
+title:  "石头，剪刀，布"
+background: green
+background-image: https://projects-static.raspberrypi.org/projects/rock-paper-scissors/69ca2f25e42aa9f46844931de5dd7ae0d16218db/en/images/rock-paper-scissors.png
 date:   2017-09-10 23:13:54
 category: Python
 tags:
-- scratch
-- 编程
-- 教师节 
+- Python
+- 容易
+- Python系列课程1 
 ---
 
 9月10号是一年一度的教师节，我要为老师送上一份特别的礼物。送什么好呢？

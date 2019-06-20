@@ -2,13 +2,15 @@
 layout: blog
 html: true
 istop: false
-title: "机器人拼装大赛——我的机器人跑得最快"
-background: green
-background-image: http://xiooix.oss-cn-hangzhou.aliyuncs.com/img/learn_20170901_pic2.jpg
+title: "生日快乐"
+background: blue
+background-image: https://projects-static.raspberrypi.org/projects/happy-birthday/56fe464042e92183fecf5b0ee688509261f3d35c/en/images/happy-birthday.png
 date:  2017-10-29 10:45:56
 category: HTML
 tags:
-- 开学
+- HTML
+- 容易
+- HTML系列课程1
 ---
 
 ## 机器人拼装大赛——我的机器人跑得最快
