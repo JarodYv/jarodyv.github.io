@@ -4,46 +4,70 @@
 <div class="main-content index-page clearfix ">
 	<div class="post-lists">
 		<div class="post-lists-body">
-      	{% for posts in paginator.posts %}
-		<div class="post-list-item">
-			<div class="post-list-item-container">
-				<div class="item-thumb  bg-{{posts.background }}" style="background-image:url('{{posts.background-image }}');">
-				</div>
-          		<a href="{{ posts.url }}">
-		            <div class="item-desc">
-						<p>{{ posts.content | strip_html | strip_newlines | truncate: 100 }}</p>
+			{% for posts in paginator.posts %}
+			<div class="post-list-item">
+				<div class="post-list-item-container">
+					<div class="item-thumb  bg-{{posts.background }}"
+						style="background-image:url('{{posts.background-image }}');">
 					</div>
-				</a>
-				<div class="item-slant reverse-slant  bg-{{ posts.background }}"></div>
-				<div class="item-slant"></div>
-				<div class="item-label">
-					<div class="item-title"><a href="{{ posts.url }}" title="访问 {{ posts.title }}"  data-hover="{{ posts.title }}">{{ posts.title }}</a>
-					</div>
-					<div class="item-meta clearfix">
-						{% assign cat = 'bg-ico-note' %}
-						{% case posts.category %}
-						{% when 'Scratch' %}
-							{% assign cat = 'bg-ico-code' %}
-						{% when 'Python' %}
-							{% assign cat = 'bg-ico-book' %}
-						{% when 'HTML' %}
-							{% assign cat = 'bg-ico-image' %}
-						{% when 'micro:bit' %}
-							{% assign cat = 'bg-ico-game' %}
-						{% else %}
-	     					{% assign cat = 'bg-ico-note' %}
-						{% endcase %}
-						<div class="item-meta-ico {{cat}}" style="background: url('http://xiooix.oss-cn-hangzhou.aliyuncs.com/style/images/bg-ico.png') no-repeat;background-size: 40px auto;">
+					<a href="{{ posts.url }}">
+						<div class="item-desc">
+							<p>{{ posts.content | strip_html | strip_newlines | truncate: 100 }}</p>
 						</div>
-	             		<div class="item-meta-cat">
-					 		<a href="/tags#{{ posts.category }}" title="访问 {{ posts.category }}" data-hover="{{ posts.category }}">{{ posts.category }}</a>
-					 		<a href="/archives#{{ posts.date | date: "%Y"}}" title="访问 {{ posts.date | date: "%Y"}}" data-hover="{{ posts.date | date: "%F %H:%M"}}">{{ posts.date | date: "%F %H:%M"}}</a>
-					 	</div>
+					</a>
+					<div class="item-slant reverse-slant  bg-{{ posts.background }}"></div>
+					<div class="item-slant"></div>
+					<div class="item-label">
+						<div class="item-title"><a href="{{ posts.url }}" title="访问 {{ posts.title }}"
+								data-hover="{{ posts.title }}">{{ posts.title }}</a>
+						</div>
+						<div class="item-meta clearfix">
+							{% assign cat = 'bg-ico-note' %}
+							{% case posts.category %}
+							{% when 'Scratch' %}
+							{% assign cat = 'bg-ico-code' %}
+							{% when 'Python' %}
+							{% assign cat = 'bg-ico-book' %}
+							{% when 'HTML' %}
+							{% assign cat = 'bg-ico-image' %}
+							{% when 'micro:bit' %}
+							{% assign cat = 'bg-ico-game' %}
+							{% else %}
+							{% assign cat = 'bg-ico-note' %}
+							{% endcase %}
+							<div class="item-meta-ico {{cat}}"
+								style="background: url('http://xiooix.oss-cn-hangzhou.aliyuncs.com/style/images/bg-ico.png') no-repeat;background-size: 40px auto;">
+							</div>
+							<div class="item-meta-cat">
+								<a href="/tags#{{ posts.category }}" title="访问 {{ posts.category }}"
+									data-hover="{{ posts.category }}">{{ posts.category }}</a>
+								<div class="post-tags">
+									{% unless page.tags == empty %}
+									{% assign tags_list = page.tags %}
+									{% if tags_list.first[0] == null %}
+									{% for tag in tags_list %}
+									<a href="/tags#{{ tag }}" title="访问{{ tag }}" data-hover="{{ tag }}">
+										{{ tag }} <span>({{ site.tags[tag].size }})</span>
+										{% unless forloop.last %}{% endunless %}
+									</a>
+									{% endfor %}
+									{% else %}
+									{% for tag in tags_list %}
+									<a href="/tags#{{ tag[0] }}" title="访问 {{ tag[0] }}" data-hover="{{tag[0]}}">
+										{{ tag[0] }} <span>({{ tag[1].size }})</span>
+										{% unless forloop.last %}{% endunless %}
+									</a>
+									{% endfor %}
+									{% endif %}
+									{% assign tags_list = nil %}
+									{% endunless %}
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-      	</div>
-        {% endfor %}
+			{% endfor %}
+		</div>
 	</div>
-</div>
-  {% include pagination.html %}
+	{% include pagination.html %}
