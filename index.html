@@ -42,8 +42,8 @@
 								<a href="/tags#{{ posts.category }}" title="访问 {{ posts.category }}"
 									data-hover="{{ posts.category }}">{{ posts.category }}</a>
 								<div class="post-tags">
-									{% unless page.tags == empty %}
-									{% assign tags_list = page.tags %}
+									{% unless posts.tags == empty %}
+									{% assign tags_list = posts.tags %}
 									{% if tags_list.first[0] == null %}
 									{% for tag in tags_list %}
 									<a href="/tags#{{ tag }}" title="访问{{ tag }}" data-hover="{{ tag }}">
