@@ -157,7 +157,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#5f5f5f;}
 /* ==========================================================================
    #main content
    ========================================================================== */
-.main-content{position:relative;max-width:940px;margin:0 auto;-webkit-animation:fade-in .5s;animation:fade-in;animation-duration:.5s;}
+.main-content{position:relative;max-width:90%;margin:0 auto;-webkit-animation:fade-in .5s;animation:fade-in;animation-duration:.5s;}
 .index-page{padding:120px 20px 0;}
 .index-page .post-list-item-container .item-label{padding:10px 20px 40px;}
 .post-lists{position:relative;display:block;overflow:hidden;}
