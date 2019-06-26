@@ -24,16 +24,16 @@
 						<div class="item-meta clearfix">
 							{% assign cat = 'bg-ico-note' %}
 							{% case posts.category %}
-							{% when 'Scratch' %}
-							{% assign cat = 'bg-ico-code' %}
-							{% when 'Python' %}
-							{% assign cat = 'bg-ico-book' %}
-							{% when 'HTML' %}
-							{% assign cat = 'bg-ico-image' %}
-							{% when 'micro:bit' %}
-							{% assign cat = 'bg-ico-game' %}
+								{% when 'Scratch' %}
+								{% assign cat = 'bg-ico-code' %}
+								{% when 'Python' %}
+								{% assign cat = 'bg-ico-book' %}
+								{% when 'HTML' %}
+								{% assign cat = 'bg-ico-image' %}
+								{% when 'micro:bit' %}
+								{% assign cat = 'bg-ico-game' %}
 							{% else %}
-							{% assign cat = 'bg-ico-note' %}
+								{% assign cat = 'bg-ico-note' %}
 							{% endcase %}
 							<div class="item-meta-ico {{cat}}"
 								style="background: url('http://xiooix.oss-cn-hangzhou.aliyuncs.com/style/images/bg-ico.png') no-repeat;background-size: 40px auto;">
@@ -43,23 +43,23 @@
 									data-hover="{{ posts.category }}">{{ posts.category }}</a>
 								<div class="post-tags">
 									{% unless posts.tags == empty %}
-									{% assign tags_list = posts.tags %}
-									{% if tags_list.first[0] == null %}
-									{% for tag in tags_list %}
-									<a href="/tags#{{ tag }}" title="访问{{ tag }}" data-hover="{{ tag }}">
-										{{ tag }} <span>({{ site.tags[tag].size }})</span>
-										{% unless forloop.last %}{% endunless %}
-									</a>
-									{% endfor %}
-									{% else %}
-									{% for tag in tags_list %}
-									<a href="/tags#{{ tag[0] }}" title="访问 {{ tag[0] }}" data-hover="{{tag[0]}}">
-										{{ tag[0] }} <span>({{ tag[1].size }})</span>
-										{% unless forloop.last %}{% endunless %}
-									</a>
-									{% endfor %}
-									{% endif %}
-									{% assign tags_list = nil %}
+										{% assign tags_list = posts.tags %}
+										{% if tags_list.first[0] == null %}
+											{% for tag in tags_list %}
+											<a href="/tags#{{ tag }}" title="访问{{ tag }}" data-hover="{{ tag }}">
+												{{ tag }}
+												{% unless forloop.last %}{% endunless %}
+											</a>
+											{% endfor %}
+										{% else %}
+											{% for tag in tags_list %}
+											<a href="/tags#{{ tag[0] }}" title="访问 {{ tag[0] }}" data-hover="{{tag[0]}}">
+												{{ tag[0] }}
+												{% unless forloop.last %}{% endunless %}
+											</a>
+											{% endfor %}
+										{% endif %}
+										{% assign tags_list = nil %}
 									{% endunless %}
 								</div>
 							</div>
