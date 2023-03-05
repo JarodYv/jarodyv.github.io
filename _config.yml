@@ -14,17 +14,17 @@ links:
   - name:         首页
     url:          /
     external:     false
-  - name:         Scratch
-    url:          /scratch
+  - name:         AI
+    url:          /ai
     external:     false
   - name:         Python
     url:          /python
     external:     false
-  - name:         HTML
-    url:          /html
+  - name:         Rust
+    url:          /rust
     external:     false
-  - name:         micro:bit
-    url:          /microbit
+  - name:         Other
+    url:          /other
     external:     false
   # - name:         归档
   #   url:          /archives
@@ -32,7 +32,7 @@ links:
   # - name:         标签
   #   url:          /tags
   #   external:     false
-  - name:         关于
+  - name:         About
     url:          /about
     external:     false
 # ------------ CONFIGURABLE END ------------
